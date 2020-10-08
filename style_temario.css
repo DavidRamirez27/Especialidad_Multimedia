@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body{
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+}
+header{
+	width: 100%;
+	height: 50px;
+	background: #FC2626;
+	color: #fff;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+nav{
+	height: 80px;
+	width: 100%;
+	background: black;
+	position: fixed;
+}
+label.logo{
+	font-size: 50px;
+	font-weight: bold;
+	color: white;
+	padding: 0 100px;
+	line-height: 80px;
+}
+nav ul{
+	float: right;
+	margin-right: 40px;
+}
+nav li{
+	display: inline-block;
+	margin: 0 8px;
+	line-height: 80px;
+}
+nav a{
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+	padding: 7px 10px;
+	border-radius: 3px;
+}
+a.active,a:hover{
+	background:#FC2626;
+	border-radius:50px;
+}
+nav #icon{
+	color: white;
+	font-size: 30px;
+	line-height: 80px;
+	float: right;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+@media (max-width: 1048px){
+	label.logo{
+		font-size: 32px;
+		padding-left: 60px;
+	}
+	nav ul{
+		margin-right: 20px;
+	}
+	nav a{
+		font-size: 17px;
+	}
+}
+@media (max-width: 909px){
+	nav #icon{
+		display: block;
+	}
+	nav ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #899286;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav a{
+		font-size: 20px;
+	}
+	a.active,a:hover{
+		border: none;
+		color: #FFFFFF;
+	}
+	nav ul.show{
+		left: 0;
+	}
+}
+
+.title{
+	text-align: center;
+	color: transparent;
+    margin: auto;
+    font-size: 50px;
+    background-image: url(../images/degradado2.jpg);
+    background-position: center;
+    background-size: cover;
+    -webkit-background-clip: text;
+
+    -webkit-text-stroke: 1.5px black;
+    text-align: center;
+    margin-top: 100px;
+    color: #4A4A4A;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+
+.container .card h4{
+    font-weight: 600;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+

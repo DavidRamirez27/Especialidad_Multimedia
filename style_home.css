@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url(banner.css);
+
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "PT Sans Narrow", Arial, sans-serif;
+	background-image:url(images/escudoespe.png);
+	background-size: 500px;
+}
+
+h1{
+    color: transparent;
+    margin: auto;
+    font-size: 50px;
+    background-image: url(../images/degradadob.jpg);
+    background-position: center;
+    background-size: cover;
+    -webkit-background-clip: text;
+
+    -webkit-text-stroke: 1.5px black;
+}
+
+header{
+	width: 100%;
+	height: 50px;
+	background: #333;
+	color: #fff;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+nav{
+	height: 80px;
+	width: 100%;
+	background: black;
+	position: fixed;
+}
+label.logo{
+	font-size: 50px;
+	font-weight: bold;
+	color: white;
+	padding: 0 100px;
+	line-height: 80px;
+}
+nav ul{
+	float: right;
+	margin-right: 40px;
+}
+nav li{
+	display: inline-block;
+	margin: 0 8px;
+	line-height: 80px;
+}
+nav a{
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+	padding: 7px 10px;
+	border-radius: 3px;
+}
+a.active,a:hover{
+	background:#FC2626;
+	border-radius:50px;
+}
+nav #icon{
+	color: white;
+	font-size: 30px;
+	line-height: 80px;
+	float: right;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+@media (max-width: 1048px){
+	label.logo{
+		font-size: 32px;
+		padding-left: 60px;
+	}
+	nav ul{
+		margin-right: 20px;
+	}
+	nav a{
+		font-size: 17px;
+	}
+}
+@media (max-width: 909px){
+	nav #icon{
+		display: block;
+	}
+	nav ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #899286;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav a{
+		font-size: 20px;
+	}
+	a.active,a:hover{
+		border: none;
+		color: #FFFFFF;
+	}
+	nav ul.show{
+		left: 0;
+	}
+}
+section {
+	width: 100%;
+	margin-bottom: 25px;
+}
+#Bienvenidos {
+	text-align: center;
+	color: transparent;
+    margin: auto;
+    font-size: 25px;
+    background-image: url(../images/degradado2.jpg);
+    background-position: center;
+    background-size: cover;
+    -webkit-background-clip: text;
+
+    -webkit-text-stroke: 1.5px black;
+    margin-top: 20px;
+}
+
+#container-blok{
+	display: flex;
+    flex-wrap: wrap;
+	padding: 50px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+#container-blok img{
+	width: 500px;
+	height: 500px;
+}
+
+#izquierda{
+	float: left;
+	padding: 10px;
+	color: #fff;
+	width: 300px;
+	margin:auto;
+	background: #000;
+}
+
+#derecha{
+	float: right;
+	padding: 10px;
+	color: #fff;
+	width: 300px;
+	margin:auto;
+	margin-top: 10px;
+	background: #000;	
+}
+
+
+#fondo {
+	background: #313231;
+	background-size: 900px;
+	width: 100%;
+	height: 1900px;
+    overflow: hidden;
+}
+
+h3{
+	text-align: center;
+	color: transparent;
+    margin: auto;
+    font-size: 100px;
+    background-image: url(../images/degradado2.jpg);
+    background-position: center;
+    background-size: cover;
+    -webkit-background-clip: text;
+
+    -webkit-text-stroke: 1.5px black;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 110px;
+    color: #fff;
+    border-bottom: 6px solid #FC2626;
+    padding-bottom: 5px;
+}
+
+#container-video{
+	padding: 15px;
+	width: 100%;
+	max-width: 720px;
+	height: auto;
+	margin: 100px auto;
+
+}
+
+#container-video, video{
+	background-color: #FC2626;
+	width: 100%;
+	height: auto;
+
+}
+
+.containernoticias{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.containernoticias .card{
+    width: 430px;
+    height: 530px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.containernoticias .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.containernoticias .card img{
+    width: 430px;
+    height: 530px;
+}
+
+footer{
+	border-top: 1px solid #9e9797;
+    background: #313231;
+    flex-wrap: wrap;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+.contenedor-footer h3{
+	font-size: 25px;
+	color: white
+
+}
